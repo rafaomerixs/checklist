@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de Segurança</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Verificador de Segurança</h1>
+
+    <div class="checklist-box">
+      <form id="formSeguranca">
+    
+<label><input type="checkbox" name="seguranca" value="2"> Antivírus está ativo</label>
+<label><input type="checkbox" name="seguranca" value="2"> Firewall está habilitado</label>
+<label><input type="checkbox" name="seguranca" value="1.5"> Atualizações automáticas do Windows estão ativadas</label>
+<label><input type="checkbox" name="seguranca" value="1"> Conta de usuário tem senha forte</label>
+<label><input type="checkbox" name="seguranca" value="1.5"> BitLocker (ou criptografia) está ativo</label>
+<label><input type="checkbox" name="seguranca" value="1"> Backup automático está configurado</label>
+        
+<button type="button" onclick="calcularSeguranca()">Verificar Segurança</button>
+      </form>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
